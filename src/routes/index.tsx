@@ -9,6 +9,7 @@ import { ProductCard } from "@/components/site/ProductCard";
 import { SOLUTIONS } from "@/data/solutions";
 import { PRODUCTS, CATEGORIES } from "@/data/catalog";
 import { BRANCHES, INDUSTRIES } from "@/data/company";
+import { BranchMap } from "@/components/site/BranchMap";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -73,9 +74,9 @@ function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden border-b border-border bg-background">
+      <section className="relative overflow-hidden border-b border-border bg-background min-h-[calc(100vh-5rem)] flex items-center">
         <div className="grid-lines absolute inset-0 opacity-30" aria-hidden="true" />
-        <Container className="relative grid items-center gap-14 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
+        <Container className="relative w-full grid items-center gap-14 py-12 lg:grid-cols-[1.05fr_0.95fr] lg:py-0">
           <Reveal>
             <h1 className="mt-4 text-[34px] leading-[1.08] font-bold text-ink sm:text-[44px] lg:text-[54px]">
               Reliable Water Purification at Any Scale
@@ -101,11 +102,11 @@ function Home() {
           </Reveal>
 
           <Reveal delay={120} className="relative">
-            <div className="relative flex aspect-square items-center justify-center rounded-[10px] border border-border bg-card p-8 shadow-xl">
+            <div className="relative flex aspect-square items-center justify-center p-8 -mt-12 lg:-mt-24">
               <img
                 src="/logo/logo.png"
                 alt="Branded Purifier Logo"
-                className="h-full w-full object-contain drop-shadow-md"
+                className="h-full w-full object-contain drop-shadow-lg scale-110"
               />
             </div>
           </Reveal>
@@ -268,24 +269,27 @@ function Home() {
                 </BtnLink>
               }
             />
-            <ul className="mt-8 space-y-3">
-              {BRANCHES.map((b, i) => (
-                <Reveal as="li" key={`${b.name}-${b.locality}`} delay={i * 70}>
-                  <div className="flex items-center justify-between gap-4 rounded-[8px] border border-border bg-card p-5">
-                    <div>
-                      <h3 className="text-[15px] font-semibold text-ink">{b.name}</h3>
-                      <p className="text-[13px] text-muted-foreground">{b.locality}</p>
+            <div className="mt-8 space-y-6">
+              <BranchMap />
+              <ul className="space-y-3">
+                {BRANCHES.map((b, i) => (
+                  <Reveal as="li" key={`${b.name}-${b.locality}`} delay={i * 70}>
+                    <div className="flex items-center justify-between gap-4 rounded-[8px] border border-border bg-card p-5">
+                      <div>
+                        <h3 className="text-[15px] font-semibold text-ink">{b.name}</h3>
+                        <p className="text-[13px] text-muted-foreground">{b.locality}</p>
+                      </div>
+                      <a
+                        href={`tel:${b.phone}`}
+                        className="text-[13px] font-semibold text-brand transition-colors hover:text-brand-deep"
+                      >
+                        {b.phone}
+                      </a>
                     </div>
-                    <a
-                      href={`tel:${b.phone}`}
-                      className="text-[13px] font-semibold text-brand transition-colors hover:text-brand-deep"
-                    >
-                      {b.phone}
-                    </a>
-                  </div>
-                </Reveal>
-              ))}
-            </ul>
+                  </Reveal>
+                ))}
+              </ul>
+            </div>
           </div>
         </Container>
       </section>

@@ -75,14 +75,19 @@ function ProductPage() {
             <p className="text-[15px] leading-8 text-ink-soft">{product.summary}</p>
 
             {product.specs.length > 0 && (
-              <dl className="mt-8 divide-y divide-border border-y border-border">
-                {product.specs.map((s) => (
-                  <div key={s.label} className="flex justify-between gap-6 py-4">
-                    <dt className="text-[13px] tracking-[0.04em] text-muted-foreground">{s.label}</dt>
-                    <dd className="text-[14px] font-semibold text-ink">{s.value}</dd>
-                  </div>
-                ))}
-              </dl>
+              <div className="mt-8">
+                <h2 className="text-[12px] font-semibold tracking-[0.16em] text-ink uppercase mb-4">
+                  Technical Specifications
+                </h2>
+                <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3">
+                  {product.specs.map((s) => (
+                    <div key={s.label} className="rounded-[8px] border border-border/60 bg-brand-wash/30 p-4 transition-all duration-300 hover:border-brand-deep/30 hover:bg-brand-wash/80">
+                      <dt className="text-[11px] font-semibold uppercase tracking-[0.06em] text-muted-foreground mb-1">{s.label}</dt>
+                      <dd className="text-[14px] font-medium text-ink">{s.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
             )}
 
             {product.models.length > 0 && (

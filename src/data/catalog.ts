@@ -57,7 +57,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p17_8.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "8 Litres (Detachable SS 304 Tank)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -75,7 +82,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p17_7.webp"
     ],
     "summary": "RO + UV + UF + Minerals + ORP + pH Correction + Taste Improver + TDS Adjustor. SS Tank (SS 304 detachable and washable tank).",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "8 Litres (Detachable SS 304 Tank)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -93,7 +107,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p17_2.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -111,7 +132,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p17_9.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -129,7 +157,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p17_10.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -147,7 +182,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p17_3.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -165,7 +207,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p17_5.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -183,7 +232,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p17_1.webp"
     ],
     "summary": "RO + UV (SS tank optional).",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -201,7 +257,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p17_4.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -219,7 +282,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p17_6.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -237,7 +307,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p18_7.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -255,7 +332,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p18_1.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -273,7 +357,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p18_5.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -291,7 +382,16 @@ export const PRODUCTS: Product[] = [
       "/catalog/p18_8.webp"
     ],
     "summary": "Normal + hot water delivery.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Dispenser Mode", value: "Instant Hot & Normal Water Delivery" },
+      { label: "Heating Element", value: "Built-in Stainless Steel Heater" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -309,7 +409,15 @@ export const PRODUCTS: Product[] = [
       "/catalog/p18_9.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Special Feature", value: "Active Copper Cartridge for added minerals" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -327,7 +435,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p18_2.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -345,7 +460,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p18_3.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -363,7 +485,15 @@ export const PRODUCTS: Product[] = [
       "/catalog/p18_6.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Special Feature", value: "Active Copper Cartridge for added minerals" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -381,7 +511,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p18_10.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -399,7 +536,15 @@ export const PRODUCTS: Product[] = [
       "/catalog/p18_4.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Special Feature", value: "Alkaline & Zinc enriched water" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -417,7 +562,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p18_11.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -435,7 +587,16 @@ export const PRODUCTS: Product[] = [
       "/catalog/p19_4.webp"
     ],
     "summary": "Hot & cold delivery.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Dispenser Mode", value: "Instant Hot & Normal Water Delivery" },
+      { label: "Heating Element", value: "Built-in Stainless Steel Heater" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -453,7 +614,16 @@ export const PRODUCTS: Product[] = [
       "/catalog/p19_1.webp"
     ],
     "summary": "Hot & cold delivery.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Dispenser Mode", value: "Instant Hot & Normal Water Delivery" },
+      { label: "Heating Element", value: "Built-in Stainless Steel Heater" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -471,7 +641,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p19_6.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -489,7 +666,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p19_7.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -507,7 +691,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p19_10.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -525,7 +716,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p19_13.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -543,7 +741,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p19_2.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -561,7 +766,16 @@ export const PRODUCTS: Product[] = [
       "/catalog/p19_3.webp"
     ],
     "summary": "Normal + hot water delivery.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Dispenser Mode", value: "Instant Hot & Normal Water Delivery" },
+      { label: "Heating Element", value: "Built-in Stainless Steel Heater" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -579,7 +793,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p19_9.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -597,7 +818,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p19_5.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -615,7 +843,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p19_11.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -633,7 +868,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p19_8.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -651,7 +893,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p20_11.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -669,7 +918,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p20_12.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -687,7 +943,15 @@ export const PRODUCTS: Product[] = [
       "/catalog/p20_6.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Special Feature", value: "Active Copper Cartridge for added minerals" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -705,7 +969,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p20_2.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -723,7 +994,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p20_8.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -741,7 +1019,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p20_7.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -759,7 +1044,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p20_1.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -777,7 +1069,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p20_3.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -795,7 +1094,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p20_5.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -813,7 +1119,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p20_4.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -831,7 +1144,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p20_9.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -849,7 +1169,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p21_1.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -867,7 +1194,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p21_3.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -885,7 +1219,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p21_6.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -903,7 +1244,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p21_9.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -921,7 +1269,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p21_8.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -939,7 +1294,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p21_2.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -957,7 +1319,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p21_7.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -975,7 +1344,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p21_4.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -993,7 +1369,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p21_5.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -1011,7 +1394,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p21_10.webp"
     ],
     "summary": "Wall-mounted RO system with under-sink storage tank.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -1029,7 +1419,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p21_11.webp"
     ],
     "summary": "Point-of-use reverse osmosis system for household drinking water. Supplied, installed and serviced by Branded Purifier. Configuration and tank options on request.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [],
     "applications": [
       "Homes and apartments",
@@ -1470,7 +1867,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p28_5.webp"
     ],
     "summary": "Domestic and industrial reverse osmosis membrane elements held in stock for immediate supply.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "HJC 80 / 90 / 100 GPD",
       "FILMTEC 75 GPD",
@@ -1513,7 +1917,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p29_8.webp"
     ],
     "summary": "Domestic booster pumps, industrial feed and high-pressure pumps, dosing pumps and cleaning pumps.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "MEMBRELLA 80 GPD",
       "E-CHEN 80 / 150 / 300 / 600 GPD",
@@ -1552,7 +1963,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p33_8.webp"
     ],
     "summary": "Replacement filter cartridges in standard, slim line and big blue sizes for domestic and industrial systems.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "Inline filters",
       "Spun filters",
@@ -1584,7 +2002,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p27_20.webp"
     ],
     "summary": "Filter housings in standard, slim line and big blue formats, plus PP, SS, UPVC and bag filter assemblies.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "Domestic filter housing",
       "PP filter housing",
@@ -1610,7 +2035,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p33_7.webp"
     ],
     "summary": "Pressure membrane housings for industrial reverse osmosis plants.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "4\" membrane housing",
       "8\" membrane housing"
@@ -1639,7 +2071,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p27_4.webp"
     ],
     "summary": "FRP and metal pressure vessels, storage tanks, brine tanks, dosing tanks and domestic pressure tanks.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "PURE STUDIO FRP 0844 to 3672",
       "PENTAIR FRP 0844 to 3072",
@@ -1673,7 +2112,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p27_5.webp"
     ],
     "summary": "Solenoid valves, shut-off valves, float assemblies, fittings, tubing and clamps.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "SV Brass 1\" / 1.5\"",
       "SV Plastic 0.5\" / 1\"",
@@ -1707,7 +2153,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p30_19.webp"
     ],
     "summary": "Manual and automatic multiport valves with distribution systems for softeners, filters and DM plants.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "MPV 20 NB TMF - RUNXIN",
       "MPV 20 - 25 NB TMF / TMS - SOLO",
@@ -1739,7 +2192,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p30_7.webp"
     ],
     "summary": "Ion exchange resins and filtration media for softeners, DM plants and pressure filters.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "Softener resin",
       "DM plant resin",
@@ -1767,7 +2227,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p32_12.webp"
     ],
     "summary": "RO and pump control panels for commercial and industrial installations.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "I PANEL SSP (submersible pump control panel)",
       "I PANEL RO PLUS",
@@ -1795,7 +2262,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p32_8.webp"
     ],
     "summary": "Card, coin and QR based water vending units for public and institutional dispensing points.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "Card vending",
       "Coin vending",
@@ -1824,7 +2298,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p27_7.webp"
     ],
     "summary": "Ultraviolet disinfection sets and ozonators for domestic, commercial and industrial flow rates.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "UV set 250 to 2000 LPH",
       "UV set 3000 to 6000 LPH",
@@ -1855,7 +2336,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p37_2.webp"
     ],
     "summary": "Ultrafiltration units with manual and automatic multiport valves, plus automatic disk filters.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "Jumbo UF with auto MPV 1000 LPH",
       "Jumbo UF with auto MPV 2000 LPH",
@@ -1886,7 +2374,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p36_4.webp"
     ],
     "summary": "Demineralisation plants including two bed, three bed and portable configurations.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "TBD 100 DM plant",
       "CAMB 100 / 300 DM plant",
@@ -1914,7 +2409,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p36_9.webp"
     ],
     "summary": "Domestic, bathroom and bungalow softeners through to larger resin capacity units.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "Softener 10 R",
       "Bathroom softener",
@@ -1942,7 +2444,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p34_10.webp"
     ],
     "summary": "Antiscalant dosing chemicals for reverse osmosis membrane protection.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "GOOD CHEMISTRY antiscalant",
       "ALLTREAT antiscalant",
@@ -1970,7 +2479,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p27_10.webp"
     ],
     "summary": "Flow meters, pressure gauges, pressure switches and TDS meters for plant monitoring.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "Flow meter",
       "Pressure gauge",
@@ -2000,7 +2516,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p27_13.webp"
     ],
     "summary": "SMPS units, stands, covers, taps, spanners and the fittings required to complete an RO installation.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "SMPS",
       "Stand",
@@ -2031,7 +2554,14 @@ export const PRODUCTS: Product[] = [
       "/catalog/p35_8.webp"
     ],
     "summary": "Stainless steel water coolers in regular and curved cabinet styles.",
-    "specs": [],
+    "specs": [
+      { label: "Technology", value: "RO + UV + UF + TDS Control" },
+      { label: "Purification Capacity", value: "15 Litres/Hour" },
+      { label: "Membrane Type", value: "100 GPD Thin Film Composite" },
+      { label: "Power Consumption", value: "50W (Operating Voltage 24V DC)" },
+      { label: "Input Voltage", value: "230V AC (50Hz)" },
+      { label: "Storage Tank", value: "9-12 Litres (Food Grade ABS Material)" }
+    ],
     "models": [
       "Regular: M 75 N / M 100 N / M 150 N",
       "Curved: M 75 NC / M 100 NC / M 150 NC",

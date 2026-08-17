@@ -11,15 +11,17 @@ export type Branch = {
   locality: string;
   phone: string;
   since?: string;
+  lat?: number;
+  lng?: number;
 };
 
 /* Branch names and phone numbers exactly as listed in the company profile. */
 export const BRANCHES: Branch[] = [
-  { name: "Kanchipuram", locality: "Keeraimandabam", phone: "9629866415", since: "2021" },
-  { name: "Vanthavasi", locality: "Vanthavasi", phone: "9500389676", since: "2022" },
-  { name: "Dusi", locality: "Dusi", phone: "8608480809", since: "2023" },
-  { name: "Uthiramerur", locality: "Uthiramerur", phone: "9500389676", since: "2023" },
-  { name: "Kanchipuram", locality: "Sangusapettai", phone: "9730048763", since: "2024" },
+  { name: "Kanchipuram", locality: "Keeraimandabam", phone: "9629866415", since: "2021", lat: 12.8342, lng: 79.7036 },
+  { name: "Vanthavasi", locality: "Vanthavasi", phone: "9500389676", since: "2022", lat: 12.4990, lng: 79.6015 },
+  { name: "Dusi", locality: "Dusi", phone: "8608480809", since: "2023", lat: 12.7710, lng: 79.6640 },
+  { name: "Uthiramerur", locality: "Uthiramerur", phone: "9500389676", since: "2023", lat: 12.6167, lng: 79.7667 },
+  { name: "Kanchipuram", locality: "Sangusapettai", phone: "9730048763", since: "2024", lat: 12.8250, lng: 79.7100 },
 ];
 
 export type Milestone = { year: string; title: string; note?: string };

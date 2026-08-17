@@ -6,6 +6,7 @@ import { PageHeader } from "@/components/site/PageHeader";
 import { Btn } from "@/components/site/Btn";
 import { BRANCHES, COMPANY } from "@/data/company";
 import { CATEGORIES } from "@/data/catalog";
+import { BranchMap } from "@/components/site/BranchMap";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -126,15 +127,12 @@ function Contact() {
                     </a>
                   </span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <FileText size={16} className="mt-1 text-brand" aria-hidden="true" />
-                  <span className="text-muted-foreground">GSTIN {COMPANY.gstin}</span>
-                </li>
               </ul>
             </div>
             <div className="rounded-[8px] border border-border p-7">
-              <h2 className="text-[12px] font-semibold tracking-[0.16em] text-ink uppercase">Branches</h2>
-              <ul className="mt-5 divide-y divide-border">
+              <h2 className="text-[12px] font-semibold tracking-[0.16em] text-ink uppercase mb-5">Branches</h2>
+              <BranchMap />
+              <ul className="mt-8 divide-y divide-border">
                 {BRANCHES.map((b) => (
                   <li key={`${b.name}-${b.locality}`} className="flex items-start justify-between gap-4 py-4">
                     <span className="flex items-start gap-3">

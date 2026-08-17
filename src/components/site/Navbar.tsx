@@ -39,11 +39,13 @@ export function Navbar() {
       )}
     >
       <Container className="flex h-[68px] items-center justify-between gap-6 lg:h-[76px]">
-        <Link to="/" aria-label="Branded Purifier — home">
-          <Logo />
-        </Link>
+        <div className="flex flex-1 items-center justify-start">
+          <Link to="/" aria-label="Branded Purifier — home">
+            <Logo />
+          </Link>
+        </div>
 
-        <nav aria-label="Primary" className="hidden lg:block">
+        <nav aria-label="Primary" className="hidden lg:flex flex-1 justify-center">
           <ul className="flex items-center gap-7">
             {NAV.map((item) => {
               const active = item.to === "/" ? pathname === "/" : pathname.startsWith(item.to);
@@ -52,14 +54,14 @@ export function Navbar() {
                   <Link
                     to={item.to}
                     className={cn(
-                      "relative py-2 text-[13px] font-semibold tracking-[0.04em] transition-colors",
+                      "relative py-2 text-[14px] font-semibold tracking-wide transition-colors",
                       active ? "text-brand" : "text-ink-soft hover:text-brand",
                     )}
                   >
                     {item.label}
                     <span
                       className={cn(
-                        "absolute -bottom-[2px] left-0 h-[2px] w-full bg-brand transition-transform duration-300",
+                        "absolute -bottom-[6px] left-0 h-[2px] w-full bg-brand transition-transform duration-300",
                         active ? "scale-x-100" : "scale-x-0",
                       )}
                     />
@@ -70,17 +72,18 @@ export function Navbar() {
           </ul>
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden lg:flex flex-1 items-center justify-end gap-6">
           <a
             href="tel:7530048763"
-            className="flex items-center gap-2 text-[13px] font-semibold text-ink transition-colors hover:text-brand"
+            aria-label="Call Branded Purifier"
+            className="group relative flex h-[42px] w-[42px] items-center justify-center rounded-full bg-brand/10 text-brand transition-all duration-300 hover:bg-brand hover:text-white hover:shadow-lg hover:shadow-brand/30"
           >
-            <Phone size={15} aria-hidden="true" />
-            7530048763
+            <span className="absolute inset-0 rounded-full animate-ping bg-brand/40 opacity-75 duration-1000"></span>
+            <Phone size={18} aria-hidden="true" className="relative z-10 transition-transform group-hover:rotate-12 group-hover:scale-110" />
           </a>
           <Link
             to="/contact"
-            className="inline-flex h-10 items-center rounded-[6px] bg-brand px-5 text-[12px] font-semibold tracking-[0.1em] text-primary-foreground uppercase transition-colors hover:bg-brand-deep"
+            className="inline-flex h-[42px] items-center rounded-[6px] bg-brand px-6 text-[13px] font-bold tracking-[0.08em] text-primary-foreground uppercase transition-colors hover:bg-brand-deep"
           >
             Get a Quote
           </Link>
