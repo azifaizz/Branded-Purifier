@@ -11,7 +11,7 @@ export function BranchMap() {
   }, []);
 
   return (
-    <div className="relative h-[400px] w-full rounded-[10px] overflow-hidden border border-border bg-muted shadow-xl">
+    <div className="relative h-full w-full overflow-hidden bg-muted">
       {!mounted ? (
         <div className="absolute inset-0 flex items-center justify-center bg-muted">
           <div className="h-6 w-6 animate-spin rounded-full border-2 border-brand border-t-transparent" />

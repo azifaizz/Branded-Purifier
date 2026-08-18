@@ -7,7 +7,10 @@ import tsConfigPaths from "vite-tsconfig-paths";
 export default defineConfig({
   plugins: [
     tanstackStart({
-      server: { entry: "server" },
+      target: 'static',
+      spa: {
+        enabled: true,
+      },
     }),
     viteReact(),
     tailwindcss(),

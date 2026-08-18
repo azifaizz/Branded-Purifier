@@ -8,8 +8,6 @@ import { CtaBand } from "@/components/site/CtaBand";
 import { ProductCard } from "@/components/site/ProductCard";
 import { SOLUTIONS } from "@/data/solutions";
 import { PRODUCTS, CATEGORIES } from "@/data/catalog";
-import { BRANCHES, INDUSTRIES } from "@/data/company";
-import { BranchMap } from "@/components/site/BranchMap";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -132,16 +130,33 @@ function Home() {
                 <Link
                   to="/solutions/$scale"
                   params={{ scale: s.slug }}
-                  className="group flex h-full flex-col rounded-[8px] border border-border bg-card p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand/50 hover:shadow-[0_20px_44px_-30px_rgba(47,128,201,0.6)]"
+                  className="group relative flex h-full flex-col overflow-hidden rounded-[8px] border border-border bg-card p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-sm"
                 >
-                  <span className="font-display text-[13px] font-extrabold tracking-[0.14em] text-brand/50">
-                    0{i + 1}
-                  </span>
-                  <h3 className="mt-5 text-[18px] font-semibold text-ink">{s.name}</h3>
-                  <p className="mt-3 flex-1 text-[14px] leading-7 text-muted-foreground">{s.short}</p>
-                  <span className="mt-6 border-t border-border pt-4 text-[11px] font-semibold tracking-[0.12em] text-ink uppercase">
-                    {s.capacity}
-                  </span>
+                  {/* Realistic Water filling animation */}
+                  <div className="absolute inset-0 z-0 translate-y-[120%] transition-transform duration-[1800ms] ease-[cubic-bezier(0.2,0.8,0.2,1)] group-hover:translate-y-[25%]" aria-hidden="true">
+                    {/* Squircles positioned at the top of the rising wrapper */}
+                    <div className="absolute left-1/2 top-[-15%] w-[250%] aspect-square -translate-x-1/2">
+                      {/* Back water layer (gentle waves) */}
+                      <div className="absolute inset-0 rounded-[43%] bg-brand/20 animate-[spin_7s_linear_infinite_reverse]" />
+                      {/* Middle water layer */}
+                      <div className="absolute inset-0 rounded-[38%] bg-brand/15 animate-[spin_5s_linear_infinite] scale-105" />
+                      {/* Main water body */}
+                      <div className="absolute inset-2 rounded-[40%] bg-brand-tint animate-[spin_10s_linear_infinite]" />
+                    </div>
+                    {/* Solid fill to ensure the bottom never shows a gap */}
+                    <div className="absolute inset-x-0 top-[20%] h-[200%] bg-brand-tint" />
+                  </div>
+                  
+                  <div className="relative z-10 flex h-full flex-col">
+                    <span className="font-display text-[13px] font-extrabold tracking-[0.14em] text-brand/50 transition-colors duration-300 group-hover:text-brand">
+                      0{i + 1}
+                    </span>
+                    <h3 className="mt-5 text-[18px] font-semibold text-ink transition-colors duration-300 group-hover:text-brand-deep">{s.name}</h3>
+                    <p className="mt-3 flex-1 text-[14px] leading-7 text-muted-foreground transition-colors duration-300 group-hover:text-ink-soft">{s.short}</p>
+                    <span className="mt-6 border-t border-border pt-4 text-[11px] font-semibold tracking-[0.12em] text-ink uppercase transition-colors duration-300 group-hover:border-transparent group-hover:text-brand-deep">
+                      {s.capacity}
+                    </span>
+                  </div>
                 </Link>
               </Reveal>
             ))}
@@ -244,55 +259,7 @@ function Home() {
         </Container>
       </section>
 
-      {/* Industries + branches */}
-      <section className="border-b border-border py-18 lg:py-24">
-        <Container className="grid gap-14 lg:grid-cols-2">
-          <div>
-            <SectionHeading eyebrow="Industries" title="Where our systems are installed" />
-            <ul className="mt-8 divide-y divide-border border-y border-border">
-              {INDUSTRIES.map((ind) => (
-                <li key={ind.title} className="py-5">
-                  <h3 className="text-[15px] font-semibold text-ink">{ind.title}</h3>
-                  <p className="mt-1 text-[13px] leading-6 text-muted-foreground">{ind.body}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <SectionHeading
-              eyebrow="Branch network"
-              title="Five branches, one service standard"
-              intro="Sales, installation and spares are handled locally through each branch."
-              action={
-                <BtnLink to="/branches" variant="outline" size="sm">
-                  Branch details
-                </BtnLink>
-              }
-            />
-            <div className="mt-8 space-y-6">
-              <BranchMap />
-              <ul className="space-y-3">
-                {BRANCHES.map((b, i) => (
-                  <Reveal as="li" key={`${b.name}-${b.locality}`} delay={i * 70}>
-                    <div className="flex items-center justify-between gap-4 rounded-[8px] border border-border bg-card p-5">
-                      <div>
-                        <h3 className="text-[15px] font-semibold text-ink">{b.name}</h3>
-                        <p className="text-[13px] text-muted-foreground">{b.locality}</p>
-                      </div>
-                      <a
-                        href={`tel:${b.phone}`}
-                        className="text-[13px] font-semibold text-brand transition-colors hover:text-brand-deep"
-                      >
-                        {b.phone}
-                      </a>
-                    </div>
-                  </Reveal>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </Container>
-      </section>
+
 
       <CtaBand />
     </>

@@ -8,6 +8,7 @@ export function SectionHeading({
   align = "left",
   action,
   className,
+  titleClassName,
   level = 2,
 }: {
   eyebrow?: string;
@@ -16,6 +17,7 @@ export function SectionHeading({
   align?: "left" | "center";
   action?: ReactNode;
   className?: string;
+  titleClassName?: string;
   level?: 1 | 2;
 }) {
   const Title = level === 1 ? "h1" : "h2";
@@ -27,12 +29,12 @@ export function SectionHeading({
         className,
       )}
     >
-      <div className={cn("max-w-2xl", align === "center" && "mx-auto text-center")}>
+      <div className={cn("max-w-2xl", align === "center" && "mx-auto text-center max-w-[100vw] sm:max-w-5xl")}>
         {eyebrow && <p className="eyebrow">{eyebrow}</p>}
-        <Title className="mt-3 text-[26px] leading-[1.15] font-bold text-ink sm:text-[32px] lg:text-[38px]">
+        <Title className={cn("mt-3 text-[26px] leading-[1.15] font-bold text-ink sm:text-[32px] lg:text-[38px]", titleClassName)}>
           {title}
         </Title>
-        {intro && <p className="mt-4 text-[15px] leading-7 text-muted-foreground">{intro}</p>}
+        {intro && <p className={cn("mt-4 text-[15px] leading-7 text-muted-foreground", align === "center" && "mx-auto max-w-2xl")}>{intro}</p>}
       </div>
       {action}
     </div>
