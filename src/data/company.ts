@@ -41,12 +41,8 @@ export const INDUSTRIES = [
     body: "Domestic RO systems, wall-mounted and under-sink units, bathroom and bungalow softeners for homes and apartments.",
   },
   {
-    title: "Commercial Buildings",
-    body: "25–100 LPH commercial RO systems and skid units for offices, retail premises and shared facilities.",
-  },
-  {
-    title: "Hospitality",
-    body: "Commercial RO systems, stainless steel water coolers and storage tanks for hotels, restaurants and canteens.",
+    title: "Commercial & Hospitality",
+    body: "Commercial RO systems, stainless steel water coolers, and skid units for offices, retail premises, hotels, and restaurants.",
   },
   {
     title: "Healthcare",

@@ -73,40 +73,47 @@ function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden border-b border-border bg-background min-h-[calc(100vh-5rem)] flex items-center">
+      <section className="relative overflow-hidden border-b border-border bg-background min-h-[calc(100vh-5rem)] flex flex-col justify-center py-12 lg:py-16">
         <div className="grid-lines absolute inset-0 opacity-30" aria-hidden="true" />
-        <Container className="relative w-full grid items-center gap-14 py-12 lg:grid-cols-[1.05fr_0.95fr] lg:py-0">
-          <Reveal>
-            <h1 className="mt-4 text-[34px] leading-[1.08] font-bold text-ink sm:text-[44px] lg:text-[54px]">
-              Reliable Water Purification at Any Scale
-            </h1>
-            <p className="mt-6 max-w-xl text-[16px] leading-8 text-muted-foreground">
-              From compact home purifiers to heavy-duty 2000 LPH industrial reverse osmosis plants. We handle the supply, installation, and ongoing maintenance with a fully stocked spares division and a five-branch service network.
-            </p>
-            <div className="mt-9 flex flex-wrap gap-3">
-              <BtnLink to="/products">Browse Catalogue</BtnLink>
-              <CallLink variant="outline">Call 7530048763</CallLink>
-            </div>
-            <dl className="mt-12 grid grid-cols-2 gap-x-6 gap-y-8 border-t border-border pt-8 sm:grid-cols-4">
+        
+        <Container className="relative w-full flex-1 flex flex-col justify-center">
+          <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
+            <Reveal>
+              <h1 className="mt-4 text-[34px] leading-[1.08] font-bold text-ink sm:text-[44px] lg:text-[54px]">
+                Reliable Water Purification at Any Scale
+              </h1>
+              <p className="mt-6 max-w-xl text-[16px] leading-8 text-muted-foreground">
+                From compact home purifiers to heavy-duty 2000 LPH industrial reverse osmosis plants. We handle the supply, installation, and ongoing maintenance with a fully stocked spares division and a five-branch service network.
+              </p>
+              <div className="mt-9 flex flex-wrap gap-3">
+                <BtnLink to="/products">Browse Catalogue</BtnLink>
+                <CallLink variant="outline">Call 7530048763</CallLink>
+              </div>
+            </Reveal>
+
+            <Reveal delay={120} className="relative">
+              <div className="relative flex aspect-square items-center justify-center p-8 -mt-12 lg:-mt-24">
+                <img
+                  src="/logo/logo.png"
+                  alt="Branded Purifier Logo"
+                  className="h-full w-full object-contain drop-shadow-lg scale-110"
+                />
+              </div>
+            </Reveal>
+          </div>
+
+          <Reveal delay={200}>
+            <div className="mt-16 sm:mt-24 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between gap-10 border-t border-border/60 pt-10">
               {STATS.map((s) => (
-                <div key={s.label}>
-                  <dt className="sr-only">{s.label}</dt>
-                  <dd>
-                    <span className="block font-display text-[24px] font-extrabold text-brand">{s.value}</span>
-                    <span className="mt-1 block text-[12px] tracking-[0.06em] text-muted-foreground">{s.label}</span>
-                  </dd>
+                <div key={s.label} className="flex flex-col sm:text-center">
+                  <span className="font-display text-[32px] sm:text-[42px] font-extrabold tracking-tight text-ink">
+                    {s.value}
+                  </span>
+                  <span className="mt-1 text-[11px] font-bold tracking-[0.15em] text-brand uppercase">
+                    {s.label}
+                  </span>
                 </div>
               ))}
-            </dl>
-          </Reveal>
-
-          <Reveal delay={120} className="relative">
-            <div className="relative flex aspect-square items-center justify-center p-8 -mt-12 lg:-mt-24">
-              <img
-                src="/logo/logo.png"
-                alt="Branded Purifier Logo"
-                className="h-full w-full object-contain drop-shadow-lg scale-110"
-              />
             </div>
           </Reveal>
         </Container>

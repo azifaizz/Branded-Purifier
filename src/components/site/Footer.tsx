@@ -59,10 +59,6 @@ export function Footer() {
             <p className="text-[13px] leading-6 text-brand">
               Sales · Installation · Annual Maintenance · Spares
             </p>
-            <div className="text-white/40 text-xs mt-8 space-y-1">
-              <p>GSTIN: {COMPANY.gstin}</p>
-              <p>© {new Date().getFullYear()} {COMPANY.name}. All rights reserved.</p>
-            </div>
           </AnimatedContainer>
 
           <div className="mt-10 grid grid-cols-1 gap-12 sm:grid-cols-3 xl:col-span-3 xl:mt-0 xl:pl-12">
@@ -136,6 +132,11 @@ export function Footer() {
             </AnimatedContainer>
           </div>
         </div>
+
+        <AnimatedContainer delay={0.5} className="w-full mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-white/40 text-xs">
+          <p>© {new Date().getFullYear()} {COMPANY.name}. All rights reserved.</p>
+          <p>GSTIN: {COMPANY.gstin}</p>
+        </AnimatedContainer>
       </footer>
     </div>
   );

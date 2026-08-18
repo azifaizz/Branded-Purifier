@@ -36,6 +36,7 @@ function SolutionsIndex() {
         title="Water treatment engineered to the scale of the site"
         intro="From a single household purifier to a 2000 LPH industrial plant, each division carries its own product range, sizing approach and service scope."
         crumbs={[{ label: "Solutions" }]}
+        align="center"
       />
 
       <section className="py-16 lg:py-20">
