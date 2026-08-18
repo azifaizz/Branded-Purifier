@@ -4,6 +4,7 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
+  useRouterState,
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
@@ -136,16 +137,23 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const hasMatches = useRouterState({ select: (s) => s.matches.length > 1 });
+  const isPending = useRouterState({ select: (s) => s.status === "pending" });
 
   return (
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col bg-background">
         <Navbar />
-        <main className="flex-1">
+        <main className="relative flex-1 min-h-screen">
+          {isPending && (
+            <div className="absolute inset-0 z-50 flex items-center justify-center bg-background">
+              <div className="h-8 w-8 animate-spin rounded-full border-4 border-brand/20 border-t-brand" />
+            </div>
+          )}
           {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
           <Outlet />
         </main>
-        <Footer />
+        {hasMatches && <Footer />}
       </div>
     </QueryClientProvider>
   );

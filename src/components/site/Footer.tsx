@@ -43,7 +43,7 @@ export function Footer() {
   const topCategories = CATEGORIES.slice(0, 8);
 
   return (
-    <div className="bg-ink text-white/70 pt-16">
+    <div className="bg-ink text-white/70">
       <footer className="md:rounded-t-[3rem] relative w-full max-w-7xl mx-auto flex flex-col items-center justify-center rounded-t-[2rem] border-t border-white/10 bg-[radial-gradient(35%_128px_at_50%_0%,theme(backgroundColor.white/8%),transparent)] px-6 py-12 lg:py-16">
         <div className="bg-white/20 absolute top-0 right-1/2 left-1/2 h-px w-1/3 -translate-x-1/2 -translate-y-1/2 rounded-full blur" />
 
@@ -80,11 +80,6 @@ export function Footer() {
                   <li>
                     <Link to="/projects" className="hover:text-white transition-colors duration-300">
                       Installations & Projects
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/branches" className="hover:text-white transition-colors duration-300">
-                      Branch Network
                     </Link>
                   </li>
                 </ul>

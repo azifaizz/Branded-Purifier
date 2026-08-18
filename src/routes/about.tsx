@@ -130,7 +130,8 @@ function About() {
           <SectionHeading 
             eyebrow="Industries" 
             title="Where our systems are installed" 
-            titleClassName="uppercase tracking-[0.02em] font-display"
+            align="center"
+            titleClassName="uppercase tracking-[0.02em] font-display font-bold"
           />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {INDUSTRIES.map((ind, i) => {
@@ -163,45 +164,47 @@ function About() {
 
       <section className="py-16 lg:py-24 border-b border-border">
         <Container>
-          <div className="grid gap-14 lg:grid-cols-[1fr_1.2fr] items-center">
-            <div>
+          <div className="flex flex-col gap-12 lg:gap-16">
+            <div className="mx-auto max-w-3xl flex flex-col items-center text-center">
               <SectionHeading
                 eyebrow="Branch network"
-                title="Five branches, one service standard"
+                title="FIVE BRANCHES, ONE SERVICE STANDARD"
                 intro="Sales, installation and spares are handled locally through each branch."
-                action={
-                  <BtnLink to="/branches" variant="outline" size="sm" className="hidden sm:inline-flex">
-                    Branch details
-                  </BtnLink>
-                }
+                align="center"
               />
-              <div className="mt-10 grid gap-4 sm:grid-cols-2">
-                {BRANCHES.map((b, i) => (
-                  <Reveal as="div" key={`${b.name}-${b.locality}`} delay={i * 70}>
-                    <div className="group relative overflow-hidden rounded-[16px] border border-brand/10 bg-brand/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:bg-white hover:shadow-[0_15px_30px_-10px_rgba(47,128,201,0.15)] dark:hover:bg-card">
-                      <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-brand/10 transition-transform duration-500 group-hover:scale-150 blur-3xl pointer-events-none" />
-                      
-                      <div className="relative z-10 flex flex-col gap-4">
-                        <div>
-                          <h3 className="text-[16px] font-bold text-ink">{b.name}</h3>
-                          <p className="text-[13px] font-medium text-muted-foreground mt-1">{b.locality}</p>
-                        </div>
-                        
-                        <a
-                          href={`tel:${b.phone}`}
-                          className="inline-flex w-fit items-center gap-2 rounded-full bg-white dark:bg-background border border-border px-3 py-1.5 text-[13px] font-bold tracking-wide text-brand shadow-sm transition-all duration-300 hover:bg-brand hover:text-white hover:border-brand"
-                        >
-                          <Phone size={14} className="transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12" />
-                          {b.phone}
-                        </a>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-4 lg:gap-6">
+              {BRANCHES.map((b, i) => (
+                <Reveal 
+                  as="div" 
+                  key={`${b.name}-${b.locality}`} 
+                  delay={i * 70}
+                  className="w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.33%-0.66rem)] lg:w-auto lg:flex-1 lg:min-w-[200px] max-w-[320px]"
+                >
+                  <div className="group h-full relative overflow-hidden rounded-[16px] border border-brand/10 bg-brand/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:bg-white hover:shadow-[0_15px_30px_-10px_rgba(47,128,201,0.15)] dark:hover:bg-card">
+                    <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-brand/10 transition-transform duration-500 group-hover:scale-150 blur-3xl pointer-events-none" />
+                    
+                    <div className="relative z-10 flex flex-col gap-4">
+                      <div>
+                        <h3 className="text-[16px] font-bold text-ink">{b.name}</h3>
+                        <p className="text-[13px] font-medium text-muted-foreground mt-1">{b.locality}</p>
                       </div>
+                      
+                      <a
+                        href={`tel:${b.phone}`}
+                        className="inline-flex w-fit items-center gap-2 rounded-full bg-white dark:bg-background border border-border px-3 py-1.5 text-[13px] font-bold tracking-wide text-brand shadow-sm transition-all duration-300 hover:bg-brand hover:text-white hover:border-brand"
+                      >
+                        <Phone size={14} className="transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12" />
+                        {b.phone}
+                      </a>
                     </div>
-                  </Reveal>
-                ))}
-              </div>
+                  </div>
+                </Reveal>
+              ))}
             </div>
             
-            <div className="relative h-[450px] lg:h-[650px] rounded-[24px] overflow-hidden shadow-[0_20px_50px_-15px_rgba(0,0,0,0.1)] border border-border/50 ring-1 ring-black/5 dark:ring-white/10">
+            <div className="relative h-[450px] lg:h-[550px] w-full rounded-[24px] overflow-hidden shadow-[0_20px_50px_-15px_rgba(0,0,0,0.1)] border border-border/50 ring-1 ring-black/5 dark:ring-white/10">
               <BranchMap />
             </div>
           </div>

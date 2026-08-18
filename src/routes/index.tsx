@@ -8,6 +8,7 @@ import { CtaBand } from "@/components/site/CtaBand";
 import { ProductCard } from "@/components/site/ProductCard";
 import { SOLUTIONS } from "@/data/solutions";
 import { PRODUCTS, CATEGORIES } from "@/data/catalog";
+import { ScrollFrameAnimation } from "@/components/site/ScrollFrameAnimation";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -153,9 +154,15 @@ function Home() {
                     </span>
                     <h3 className="mt-5 text-[18px] font-semibold text-ink transition-colors duration-300 group-hover:text-brand-deep">{s.name}</h3>
                     <p className="mt-3 flex-1 text-[14px] leading-7 text-muted-foreground transition-colors duration-300 group-hover:text-ink-soft">{s.short}</p>
-                    <span className="mt-6 border-t border-border pt-4 text-[11px] font-semibold tracking-[0.12em] text-ink uppercase transition-colors duration-300 group-hover:border-transparent group-hover:text-brand-deep">
-                      {s.capacity}
-                    </span>
+                    <div className="mt-6 border-t border-border pt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between transition-colors duration-300 group-hover:border-transparent">
+                      <span className="text-[11px] font-semibold tracking-[0.12em] text-ink uppercase transition-colors duration-300 group-hover:text-brand-deep">
+                        {s.capacity}
+                      </span>
+                      <span className="flex items-center gap-1 text-[13px] font-semibold text-brand transition-all duration-300 opacity-100 translate-x-0 lg:opacity-0 lg:-translate-x-2 group-hover:opacity-100 group-hover:translate-x-0">
+                        View details
+                        <ArrowRight size={14} />
+                      </span>
+                    </div>
                   </div>
                 </Link>
               </Reveal>
@@ -191,10 +198,15 @@ function Home() {
           <ul className="grid gap-5 sm:grid-cols-2">
             {CAPABILITIES.map((c, i) => (
               <Reveal as="li" key={c.title} delay={i * 80}>
-                <div className="h-full rounded-[8px] border border-border bg-card p-6">
-                  <c.icon size={22} className="text-brand" aria-hidden="true" />
-                  <h3 className="mt-5 text-[16px] font-semibold text-ink">{c.title}</h3>
-                  <p className="mt-2 text-[13px] leading-6 text-muted-foreground">{c.body}</p>
+                <div className="group relative overflow-hidden h-full rounded-[8px] border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-sm">
+                  {/* Pastel blue fill from bottom to top on hover */}
+                  <div className="absolute inset-0 z-0 bg-brand/10 translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0" aria-hidden="true" />
+
+                  <div className="relative z-10">
+                    <c.icon size={22} className="text-brand transition-transform duration-500 group-hover:scale-110" aria-hidden="true" />
+                    <h3 className="mt-5 text-[16px] font-semibold text-ink transition-colors duration-300 group-hover:text-brand-deep">{c.title}</h3>
+                    <p className="mt-2 text-[13px] leading-6 text-muted-foreground transition-colors duration-300 group-hover:text-ink-soft">{c.body}</p>
+                  </div>
                 </div>
               </Reveal>
             ))}
@@ -260,7 +272,7 @@ function Home() {
       </section>
 
 
-
+      <ScrollFrameAnimation />
       <CtaBand />
     </>
   );
