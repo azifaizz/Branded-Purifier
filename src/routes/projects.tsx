@@ -65,9 +65,10 @@ function Projects() {
     <>
       <PageHeader
         eyebrow="Projects"
-        title="Installations delivered on site"
+        title="INSTALLATIONS DELIVERED ON SITE"
         intro="Plants supplied, erected and commissioned by Branded Purifier across capacities from 50 LPH to 2000 LPH."
         crumbs={[{ label: "Projects" }]}
+        align="center"
       />
       <section className="py-16 lg:py-20">
         <Container className="space-y-14">

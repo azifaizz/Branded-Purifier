@@ -33,7 +33,7 @@ function SolutionsIndex() {
     <>
       <PageHeader
         eyebrow="Solutions"
-        title="Water treatment engineered to the scale of the site"
+        title="WATER TREATMENT ENGINEERED TO THE SCALE OF THE SITE"
         intro="From a single household purifier to a 2000 LPH industrial plant, each division carries its own product range, sizing approach and service scope."
         crumbs={[{ label: "Solutions" }]}
         align="center"

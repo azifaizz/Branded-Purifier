@@ -38,9 +38,10 @@ function Contact() {
     <>
       <PageHeader
         eyebrow="Contact"
-        title="Request a quotation or site visit"
+        title="REQUEST A QUOTATION OR SITE VISIT"
         intro="Share your requirement, feed water details and location. Our team will recommend the right system and capacity."
         crumbs={[{ label: "Contact" }]}
+        align="center"
       />
 
       <section className="py-16 lg:py-20">

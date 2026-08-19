@@ -73,26 +73,26 @@ function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden border-b border-border bg-background min-h-[calc(100vh-5rem)] flex flex-col justify-center py-12 lg:py-16">
+      <section className="relative overflow-hidden border-b border-border bg-background min-h-[calc(100vh-5rem)] flex flex-col justify-center py-10 sm:py-12 lg:py-16">
         <div className="grid-lines absolute inset-0 opacity-30" aria-hidden="true" />
-        
+
         <Container className="relative w-full flex-1 flex flex-col justify-center">
-          <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
+          <div className="grid items-center gap-10 sm:gap-14 lg:grid-cols-[1.05fr_0.95fr]">
             <Reveal>
-              <h1 className="mt-4 text-[34px] leading-[1.08] font-bold text-ink sm:text-[44px] lg:text-[54px]">
+              <h1 className="mt-4 text-[28px] leading-[1.12] font-bold text-ink sm:text-[38px] lg:text-[54px]">
                 Reliable Water Purification at Any Scale
               </h1>
-              <p className="mt-6 max-w-xl text-[16px] leading-8 text-muted-foreground">
+              <p className="mt-5 sm:mt-6 max-w-xl text-[14px] sm:text-[16px] leading-7 sm:leading-8 text-muted-foreground">
                 From compact home purifiers to heavy-duty 2000 LPH industrial reverse osmosis plants. We handle the supply, installation, and ongoing maintenance with a fully stocked spares division and a five-branch service network.
               </p>
-              <div className="mt-9 flex flex-wrap gap-3">
+              <div className="mt-7 sm:mt-9 flex flex-wrap gap-3">
                 <BtnLink to="/products">Browse Catalogue</BtnLink>
                 <CallLink variant="outline">Call 7530048763</CallLink>
               </div>
             </Reveal>
 
             <Reveal delay={120} className="relative">
-              <div className="relative flex aspect-square items-center justify-center p-8 -mt-12 lg:-mt-24">
+              <div className="relative flex aspect-square items-center justify-center p-6 sm:p-8 -mt-4 lg:-mt-24 max-w-[240px] mx-auto lg:max-w-none lg:mx-0">
                 <img
                   src="/logo/logo.png"
                   alt="Branded Purifier Logo"
@@ -103,13 +103,13 @@ function Home() {
           </div>
 
           <Reveal delay={200}>
-            <div className="mt-16 sm:mt-24 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between gap-10 border-t border-border/60 pt-10">
+            <div className="mt-12 sm:mt-24 w-full grid grid-cols-2 gap-x-4 gap-y-8 sm:flex sm:flex-row sm:items-center sm:justify-between sm:gap-10 border-t border-border/60 pt-8 sm:pt-10">
               {STATS.map((s) => (
                 <div key={s.label} className="flex flex-col sm:text-center">
-                  <span className="font-display text-[32px] sm:text-[42px] font-extrabold tracking-tight text-ink">
+                  <span className="font-display text-[26px] sm:text-[42px] font-extrabold tracking-tight text-ink">
                     {s.value}
                   </span>
-                  <span className="mt-1 text-[11px] font-bold tracking-[0.15em] text-brand uppercase">
+                  <span className="mt-1 text-[10px] sm:text-[11px] font-bold tracking-[0.1em] sm:tracking-[0.15em] text-brand uppercase">
                     {s.label}
                   </span>
                 </div>
@@ -120,7 +120,7 @@ function Home() {
       </section>
 
       {/* Solutions */}
-      <section className="border-b border-border py-18 lg:py-24">
+      <section className="border-b border-border py-14 sm:py-18 lg:py-24">
         <Container>
           <SectionHeading
             eyebrow="Solutions"
@@ -132,13 +132,13 @@ function Home() {
               </BtnLink>
             }
           />
-          <ul className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <ul className="mt-9 sm:mt-12 grid gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {SOLUTIONS.map((s, i) => (
               <Reveal as="li" key={s.slug} delay={i * 90}>
                 <Link
                   to="/solutions/$scale"
                   params={{ scale: s.slug }}
-                  className="group relative flex h-full flex-col overflow-hidden rounded-[8px] border border-border bg-card p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-sm"
+                  className="group relative flex h-full flex-col overflow-hidden rounded-[8px] border border-border bg-card p-6 sm:p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-sm"
                 >
                   {/* Realistic Water filling animation */}
                   <div className="absolute inset-0 z-0 translate-y-[120%] transition-transform duration-[1800ms] ease-[cubic-bezier(0.2,0.8,0.2,1)] group-hover:translate-y-[25%]" aria-hidden="true">
@@ -154,14 +154,14 @@ function Home() {
                     {/* Solid fill to ensure the bottom never shows a gap */}
                     <div className="absolute inset-x-0 top-[20%] h-[200%] bg-brand-tint" />
                   </div>
-                  
+
                   <div className="relative z-10 flex h-full flex-col">
                     <span className="font-display text-[13px] font-extrabold tracking-[0.14em] text-brand/50 transition-colors duration-300 group-hover:text-brand">
                       0{i + 1}
                     </span>
-                    <h3 className="mt-5 text-[18px] font-semibold text-ink transition-colors duration-300 group-hover:text-brand-deep">{s.name}</h3>
-                    <p className="mt-3 flex-1 text-[14px] leading-7 text-muted-foreground transition-colors duration-300 group-hover:text-ink-soft">{s.short}</p>
-                    <div className="mt-6 border-t border-border pt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between transition-colors duration-300 group-hover:border-transparent">
+                    <h3 className="mt-4 sm:mt-5 text-[17px] sm:text-[18px] font-semibold text-ink transition-colors duration-300 group-hover:text-brand-deep">{s.name}</h3>
+                    <p className="mt-3 flex-1 text-[13.5px] sm:text-[14px] leading-6 sm:leading-7 text-muted-foreground transition-colors duration-300 group-hover:text-ink-soft">{s.short}</p>
+                    <div className="mt-5 sm:mt-6 border-t border-border pt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between transition-colors duration-300 group-hover:border-transparent">
                       <span className="text-[11px] font-semibold tracking-[0.12em] text-ink uppercase transition-colors duration-300 group-hover:text-brand-deep">
                         {s.capacity}
                       </span>
@@ -179,15 +179,15 @@ function Home() {
       </section>
 
       {/* Capabilities */}
-      <section className="border-b border-border bg-brand-wash py-18 lg:py-24">
-        <Container className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
+      <section className="border-b border-border bg-brand-wash py-14 sm:py-18 lg:py-24">
+        <Container className="grid gap-10 sm:gap-14 lg:grid-cols-[0.9fr_1.1fr]">
           <Reveal>
             <SectionHeading
               eyebrow="Capabilities"
               title="Supply, fabrication, installation and lifetime service"
               intro="Branded Purifier handles the full lifecycle of a water treatment installation, from source water assessment through to annual maintenance."
             />
-            <ul className="mt-8 space-y-3">
+            <ul className="mt-7 sm:mt-8 space-y-3">
               {[
                 "Source water testing and system sizing",
                 "Skid fabrication in MS and SS",
@@ -195,24 +195,24 @@ function Home() {
                 "Membrane, media and cartridge replacement",
                 "Annual maintenance contracts",
               ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-[14px] leading-7 text-ink-soft">
+                <li key={item} className="flex items-start gap-3 text-[13.5px] sm:text-[14px] leading-6 sm:leading-7 text-ink-soft">
                   <CheckCircle2 size={17} className="mt-1 shrink-0 text-brand" aria-hidden="true" />
                   {item}
                 </li>
               ))}
             </ul>
           </Reveal>
-          <ul className="grid gap-5 sm:grid-cols-2">
+          <ul className="grid gap-4 sm:gap-5 sm:grid-cols-2">
             {CAPABILITIES.map((c, i) => (
               <Reveal as="li" key={c.title} delay={i * 80}>
-                <div className="group relative overflow-hidden h-full rounded-[8px] border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-sm">
+                <div className="group relative overflow-hidden h-full rounded-[8px] border border-border bg-card p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-sm">
                   {/* Pastel blue fill from bottom to top on hover */}
                   <div className="absolute inset-0 z-0 bg-brand/10 translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0" aria-hidden="true" />
 
                   <div className="relative z-10">
                     <c.icon size={22} className="text-brand transition-transform duration-500 group-hover:scale-110" aria-hidden="true" />
-                    <h3 className="mt-5 text-[16px] font-semibold text-ink transition-colors duration-300 group-hover:text-brand-deep">{c.title}</h3>
-                    <p className="mt-2 text-[13px] leading-6 text-muted-foreground transition-colors duration-300 group-hover:text-ink-soft">{c.body}</p>
+                    <h3 className="mt-4 sm:mt-5 text-[15px] sm:text-[16px] font-semibold text-ink transition-colors duration-300 group-hover:text-brand-deep">{c.title}</h3>
+                    <p className="mt-2 text-[12.5px] sm:text-[13px] leading-5 sm:leading-6 text-muted-foreground transition-colors duration-300 group-hover:text-ink-soft">{c.body}</p>
                   </div>
                 </div>
               </Reveal>
@@ -222,7 +222,7 @@ function Home() {
       </section>
 
       {/* Featured products */}
-      <section className="border-b border-border py-18 lg:py-24">
+      <section className="border-b border-border py-14 sm:py-18 lg:py-24">
         <Container>
           <SectionHeading
             eyebrow="Catalogue"
@@ -234,7 +234,7 @@ function Home() {
               </BtnLink>
             }
           />
-          <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <ul className="mt-9 sm:mt-12 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
             {featured.map((p, i) => (
               <Reveal as="li" key={p.slug} delay={i * 80} className="h-full">
                 <ProductCard product={p} />
@@ -245,27 +245,27 @@ function Home() {
       </section>
 
       {/* Components strip */}
-      <section className="border-b border-border bg-ink py-18 lg:py-24">
+      <section className="border-b border-border bg-ink py-14 sm:py-18 lg:py-24">
         <Container>
           <div className="max-w-2xl">
             <p className="eyebrow">Components Division</p>
-            <h2 className="mt-3 text-[26px] leading-tight font-bold text-primary-foreground sm:text-[34px]">
+            <h2 className="mt-3 text-[22px] leading-tight font-bold text-primary-foreground sm:text-[26px] lg:text-[34px]">
               Membranes, pumps, vessels, media and panels held in stock
             </h2>
-            <p className="mt-4 text-[15px] leading-7 text-white/70">
+            <p className="mt-4 text-[14px] sm:text-[15px] leading-6 sm:leading-7 text-white/70">
               Every part required to build, service or upgrade a plant — from 80 GPD domestic membranes to 8040
               industrial elements and FRP pressure vessels.
             </p>
           </div>
-          <ul className="mt-10 grid gap-px overflow-hidden rounded-[8px] border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+          <ul className="mt-8 sm:mt-10 grid gap-px overflow-hidden rounded-[8px] border border-white/10 bg-white/10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {componentCategories.map((c) => (
               <li key={c.id}>
                 <Link
                   to="/products"
                   search={{ category: c.id }}
-                  className="group flex h-full items-center justify-between gap-4 bg-ink p-5 transition-colors hover:bg-brand-deep"
+                  className="group flex h-full items-center justify-between gap-4 bg-ink p-4 sm:p-5 transition-colors hover:bg-brand-deep"
                 >
-                  <span className="text-[14px] font-medium text-white/85">{c.name}</span>
+                  <span className="text-[13.5px] sm:text-[14px] font-medium text-white/85">{c.name}</span>
                   <ArrowRight
                     size={15}
                     className="shrink-0 text-brand transition-transform duration-300 group-hover:translate-x-1"
@@ -277,7 +277,6 @@ function Home() {
           </ul>
         </Container>
       </section>
-
 
       <ScrollFrameAnimation />
       <CtaBand />

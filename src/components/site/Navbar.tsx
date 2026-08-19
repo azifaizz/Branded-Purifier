@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Container } from "./Container";
 import { Logo } from "./Logo";
 import { cn } from "@/lib/utils";
+import { MenuVertical } from "@/components/ui/menu-vertical";
 
 const NAV = [
   { label: "Home", to: "/" },
@@ -53,7 +54,7 @@ export function Navbar() {
         </div>
 
         <nav aria-label="Primary" className="hidden lg:flex flex-1 justify-center">
-          <ul className="flex items-center gap-7">
+          <ul className="flex items-center gap-8">
             {NAV.map((item) => {
               const active = item.to === "/" ? pathname === "/" : pathname.startsWith(item.to);
               return (
@@ -62,14 +63,14 @@ export function Navbar() {
                     to={item.to}
                     onClick={(e) => handleLinkClick(e, item.to)}
                     className={cn(
-                      "relative py-2 text-[14px] font-semibold tracking-wide transition-colors",
+                      "relative py-1.5 text-[15px] font-semibold tracking-wide transition-colors",
                       active ? "text-brand" : "text-ink-soft hover:text-brand",
                     )}
                   >
                     {item.label}
                     <span
                       className={cn(
-                        "absolute -bottom-[6px] left-0 h-[2px] w-full bg-brand transition-transform duration-300",
+                        "absolute -bottom-[8px] left-0 h-[2.5px] w-full bg-brand rounded-full transition-transform duration-300",
                         active ? "scale-x-100" : "scale-x-0",
                       )}
                     />
@@ -84,10 +85,9 @@ export function Navbar() {
           <a
             href="tel:7530048763"
             aria-label="Call Branded Purifier"
-            className="group relative flex h-[42px] w-[42px] items-center justify-center rounded-full bg-brand/10 text-brand transition-all duration-300 hover:bg-brand hover:text-white hover:shadow-lg hover:shadow-brand/30"
+            className="group flex h-[42px] w-[42px] items-center justify-center rounded-full bg-brand/10 text-brand transition-all duration-300 hover:bg-brand hover:text-white"
           >
-            <span className="absolute inset-0 rounded-full animate-ping bg-brand/40 opacity-75 duration-1000"></span>
-            <Phone size={18} aria-hidden="true" className="relative z-10 transition-transform group-hover:rotate-12 group-hover:scale-110" />
+            <Phone size={18} aria-hidden="true" className="transition-transform group-hover:rotate-12 group-hover:scale-110" />
           </a>
           <Link
             to="/contact"
@@ -122,19 +122,10 @@ export function Navbar() {
       {open && (
         <div id="mobile-nav" className="border-t border-border bg-background lg:hidden">
           <Container className="py-2">
-            <ul className="divide-y divide-border">
-              {NAV.map((item) => (
-                <li key={item.to}>
-                  <Link 
-                    to={item.to} 
-                    onClick={(e) => handleLinkClick(e, item.to)}
-                    className="block py-4 text-[15px] font-semibold text-ink"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <MenuVertical 
+              menuItems={NAV} 
+              onLinkClick={handleLinkClick} 
+            />
             <Link
               to="/contact"
               onClick={(e) => handleLinkClick(e, "/contact")}

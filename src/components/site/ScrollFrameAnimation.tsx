@@ -355,7 +355,7 @@ export function ScrollFrameAnimation() {
       <div className="sticky top-[68px] lg:top-[76px] h-[calc(100vh-68px)] lg:h-[calc(100vh-76px)] w-full overflow-hidden bg-ink">
         
         {/* CANVAS (Top on mobile, Right on desktop, bleeding to edge) */}
-        <div className="absolute top-0 left-0 w-full h-[45vh] lg:h-full lg:left-auto lg:right-0 lg:w-[60vw] xl:w-[65vw] z-0">
+        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-full lg:left-auto lg:right-0 lg:w-[60vw] xl:w-[65vw] z-0">
           <canvas
             ref={canvasRef}
             className="absolute inset-0 h-full w-full"
@@ -364,19 +364,19 @@ export function ScrollFrameAnimation() {
           {/* Desktop: Dark left edge fading to transparent */}
           <div className="hidden lg:block absolute inset-y-0 left-0 w-40 xl:w-56 bg-gradient-to-r from-ink to-transparent pointer-events-none" />
           {/* Mobile: Dark bottom edge fading to transparent */}
-          <div className="lg:hidden absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-ink to-transparent pointer-events-none" />
+          <div className="lg:hidden absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink to-transparent pointer-events-none" />
         </div>
 
         {/* FOREGROUND CONTENT (Contained in max-w-7xl) */}
         <div className="relative z-10 h-full w-full max-w-7xl mx-auto flex flex-col lg:flex-row px-5 lg:px-10 pointer-events-none">
           
           {/* Mobile Spacer to push text below the canvas */}
-          <div className="h-[40vh] shrink-0 lg:hidden pointer-events-none" />
+          <div className="h-[30vh] shrink-0 lg:hidden pointer-events-none" />
 
           {/* LEFT (Desktop) / BOTTOM (Mobile) — Process steps */}
           <div
             ref={stepsContainerRef}
-            className="flex flex-col w-full lg:w-[420px] shrink-0 h-[calc(100%-40vh)] lg:h-full overflow-y-auto justify-start lg:justify-center pr-2 lg:pr-0 pb-10 lg:pb-0 pointer-events-auto"
+            className="flex flex-col w-full lg:w-[420px] shrink-0 h-[calc(100%-30vh)] lg:h-full overflow-y-auto justify-start lg:justify-center pr-2 lg:pr-0 pb-10 lg:pb-0 pointer-events-auto"
             style={{ scrollbarWidth: 'none' }}
           >
             <p className="text-[10px] lg:text-[11px] tracking-[0.2em] text-brand uppercase font-display font-bold mb-4 lg:mb-6 mt-4 lg:mt-0">

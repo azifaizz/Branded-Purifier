@@ -38,9 +38,10 @@ function ProductsIndex() {
     <>
       <PageHeader
         eyebrow="Catalogue"
-        title="Product catalogue"
+        title="PRODUCT CATALOGUE"
         intro={`${PRODUCTS.length} systems, component groups and spares across ${CATEGORIES.length} categories.`}
         crumbs={[{ label: "Products" }]}
+        align="center"
       />
 
       <section className="py-14 lg:py-18">
