@@ -19,6 +19,14 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
   const pathname = useRouterState({ select: (s) => s.location.pathname });
 
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, to: string) => {
+    if (pathname === to) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      setOpen(false);
+    }
+  };
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
     onScroll();
@@ -39,7 +47,7 @@ export function Navbar() {
     >
       <Container className="flex h-[68px] items-center justify-between gap-6 lg:h-[76px]">
         <div className="flex flex-1 items-center justify-start">
-          <Link to="/" aria-label="Branded Purifier — home">
+          <Link to="/" aria-label="Branded Purifier — home" onClick={(e) => handleLinkClick(e, "/")}>
             <Logo />
           </Link>
         </div>
@@ -52,6 +60,7 @@ export function Navbar() {
                 <li key={item.to}>
                   <Link
                     to={item.to}
+                    onClick={(e) => handleLinkClick(e, item.to)}
                     className={cn(
                       "relative py-2 text-[14px] font-semibold tracking-wide transition-colors",
                       active ? "text-brand" : "text-ink-soft hover:text-brand",
@@ -82,6 +91,7 @@ export function Navbar() {
           </a>
           <Link
             to="/contact"
+            onClick={(e) => handleLinkClick(e, "/contact")}
             className="inline-flex h-[42px] items-center rounded-[6px] bg-brand px-6 text-[13px] font-bold tracking-[0.08em] text-primary-foreground uppercase transition-colors hover:bg-brand-deep"
           >
             Get a Quote
@@ -115,7 +125,11 @@ export function Navbar() {
             <ul className="divide-y divide-border">
               {NAV.map((item) => (
                 <li key={item.to}>
-                  <Link to={item.to} className="block py-4 text-[15px] font-semibold text-ink">
+                  <Link 
+                    to={item.to} 
+                    onClick={(e) => handleLinkClick(e, item.to)}
+                    className="block py-4 text-[15px] font-semibold text-ink"
+                  >
                     {item.label}
                   </Link>
                 </li>
@@ -123,6 +137,7 @@ export function Navbar() {
             </ul>
             <Link
               to="/contact"
+              onClick={(e) => handleLinkClick(e, "/contact")}
               className="my-4 inline-flex h-11 w-full items-center justify-center rounded-[6px] bg-brand text-[12px] font-semibold tracking-[0.1em] text-primary-foreground uppercase"
             >
               Get a Quote

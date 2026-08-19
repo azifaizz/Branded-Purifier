@@ -112,11 +112,13 @@ export function ScrollFrameAnimation() {
 
     let dw: number, dh: number, dx: number, dy: number;
     if (canvasAspect > imgAspect) {
-      dh = ch; dw = ch * imgAspect;
-      dx = (cw - dw) / 2; dy = 0;
-    } else {
+      // Canvas is wider than image (e.g. 21:9 vs 16:9) -> Scale to fit width
       dw = cw; dh = cw / imgAspect;
       dx = 0; dy = (ch - dh) / 2;
+    } else {
+      // Canvas is taller than image -> Scale to fit height
+      dh = ch; dw = ch * imgAspect;
+      dx = (cw - dw) / 2; dy = 0;
     }
     ctx.drawImage(img, dx, dy, dw, dh);
   }, [findNearestLoaded]);
@@ -256,13 +258,20 @@ export function ScrollFrameAnimation() {
     if (!canvas) return;
     const parent = canvas.parentElement;
     if (!parent) return;
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const dpr = window.devicePixelRatio || 1; // Uncap DPR for maximum sharpness on modern displays
     const w = parent.clientWidth;
     const h = parent.clientHeight;
     canvas.width = w * dpr;
     canvas.height = h * dpr;
     canvas.style.width = `${w}px`;
     canvas.style.height = `${h}px`;
+    
+    const ctx = canvas.getContext("2d");
+    if (ctx) {
+      ctx.imageSmoothingEnabled = true;
+      ctx.imageSmoothingQuality = "high";
+    }
+    
     lastRenderedFrameRef.current = -1;
   }, []);
 
@@ -324,6 +333,18 @@ export function ScrollFrameAnimation() {
     };
   }, [loadFrame, handleScroll, resizeCanvas, tick, renderFrame]);
 
+  // Prevent scrolling while the initial frames are loading
+  useEffect(() => {
+    if (isLoading) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isLoading]);
+
   return (
     <section
       ref={sectionRef}
@@ -331,16 +352,34 @@ export function ScrollFrameAnimation() {
       style={{ height: `${SECTION_HEIGHT_VH}vh` }}
     >
       {/* Sticky viewport — Offset by navbar height (68px mobile / 76px desktop) */}
-      <div className="sticky top-[68px] lg:top-[76px] h-[calc(100vh-68px)] lg:h-[calc(100vh-76px)] w-full overflow-hidden">
-        <div className="relative h-full w-full max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-stretch px-5 lg:px-10 py-6 lg:py-0 gap-6 lg:gap-12">
+      <div className="sticky top-[68px] lg:top-[76px] h-[calc(100vh-68px)] lg:h-[calc(100vh-76px)] w-full overflow-hidden bg-ink">
+        
+        {/* CANVAS (Top on mobile, Right on desktop, bleeding to edge) */}
+        <div className="absolute top-0 left-0 w-full h-[45vh] lg:h-full lg:left-auto lg:right-0 lg:w-[60vw] xl:w-[65vw] z-0">
+          <canvas
+            ref={canvasRef}
+            className="absolute inset-0 h-full w-full"
+            aria-hidden="true"
+          />
+          {/* Desktop: Dark left edge fading to transparent */}
+          <div className="hidden lg:block absolute inset-y-0 left-0 w-40 xl:w-56 bg-gradient-to-r from-ink to-transparent pointer-events-none" />
+          {/* Mobile: Dark bottom edge fading to transparent */}
+          <div className="lg:hidden absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-ink to-transparent pointer-events-none" />
+        </div>
+
+        {/* FOREGROUND CONTENT (Contained in max-w-7xl) */}
+        <div className="relative z-10 h-full w-full max-w-7xl mx-auto flex flex-col lg:flex-row px-5 lg:px-10 pointer-events-none">
+          
+          {/* Mobile Spacer to push text below the canvas */}
+          <div className="h-[40vh] shrink-0 lg:hidden pointer-events-none" />
 
           {/* LEFT (Desktop) / BOTTOM (Mobile) — Process steps */}
           <div
             ref={stepsContainerRef}
-            className="flex flex-col w-full lg:w-[380px] shrink-0 h-[45vh] lg:h-full overflow-y-auto lg:justify-center pr-2 lg:pr-0 pb-10 lg:pb-0"
+            className="flex flex-col w-full lg:w-[420px] shrink-0 h-[calc(100%-40vh)] lg:h-full overflow-y-auto justify-start lg:justify-center pr-2 lg:pr-0 pb-10 lg:pb-0 pointer-events-auto"
             style={{ scrollbarWidth: 'none' }}
           >
-            <p className="text-[10px] lg:text-[11px] tracking-[0.2em] text-brand uppercase font-display font-bold mb-4 lg:mb-6 mt-auto lg:mt-0 pt-4 lg:pt-0">
+            <p className="text-[10px] lg:text-[11px] tracking-[0.2em] text-brand uppercase font-display font-bold mb-4 lg:mb-6 mt-4 lg:mt-0">
               The Process
             </p>
             {PROCESS_STEPS.map((step, i) => (
@@ -415,22 +454,30 @@ export function ScrollFrameAnimation() {
             ))}
           </div>
 
-          {/* RIGHT (Desktop) / TOP (Mobile) — Canvas */}
-          <div className="relative flex-1 flex items-center justify-center min-w-0 h-[45vh] lg:h-auto mt-8 lg:mt-0">
-            {/* Maintain 16:9 aspect ratio container */}
-            <div className="relative w-full" style={{ maxHeight: "85vh" }}>
-              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-                <canvas
-                  ref={canvasRef}
-                  className="absolute inset-0 h-full w-full rounded-lg"
-                  aria-hidden="true"
-                />
-              </div>
-            </div>
-          </div>
+          {/* RIGHT (Desktop) / TOP (Mobile) — Empty Spacer to maintain flex layout and keep text on the left */}
+          <div className="hidden lg:block relative flex-1 pointer-events-none"></div>
         </div>
 
+      </div>
+
+      {/* Full-Screen Loading Splash Screen */}
+      <div 
+        className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-ink transition-opacity duration-700 ease-out ${isLoading ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+      >
+        <div className="flex flex-col items-center gap-5">
+          <Droplets className="text-brand animate-bounce" size={32} />
+          <div className="w-64 h-1.5 bg-white/10 rounded-full overflow-hidden">
+            <div 
+              className="h-full bg-brand rounded-full transition-[width] duration-300 ease-out" 
+              style={{ width: `${Math.max(10, loadProgress * 100 * (300/30))}%` }}
+            />
+          </div>
+          <span className="text-[12px] font-bold tracking-[0.2em] text-brand uppercase mt-2">
+            Loading Experience
+          </span>
+        </div>
       </div>
     </section>
   );
 }
+
